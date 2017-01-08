@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings
+	version="2.1"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+	jaxb:extensionBindingPrefixes="inheritance">
+
+	<jaxb:bindings schemaLocation="pacs.009.001.06.xsd" node="/xs:schema">
+		<jaxb:globalBindings typesafeEnumMaxMembers="0" />
+
+		<jaxb:schemaBindings>
+			<jaxb:package name="pacs_009" />
+		</jaxb:schemaBindings>
+			
+		<jaxb:bindings node="xs:complexType[@name='BranchAndFinancialInstitutionIdentification5']">
+			<inheritance:implements>niv.test.BranchAndFinancialInstitutionIdentification</inheritance:implements>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='FinancialInstitutionIdentification8']">
+			<inheritance:implements>niv.test.FinancialInstitutionIdentification</inheritance:implements>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='ClearingSystemMemberIdentification2']">
+			<inheritance:implements>niv.test.ClearingSystemMemberIdentification</inheritance:implements>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='PostalAddress6']">
+			<inheritance:implements>niv.test.PostalAddress</inheritance:implements>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='GenericFinancialIdentification1']">
+			<inheritance:implements>niv.test.GenericFinancialIdentification</inheritance:implements>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='ClearingSystemIdentification2Choice']">
+			<inheritance:implements>niv.test.ClearingSystemIdentification2Choice</inheritance:implements>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='BranchData2']">
+			<inheritance:implements>niv.test.BranchData</inheritance:implements>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='FinancialIdentificationSchemeName1Choice']">
+			<inheritance:implements>niv.test.FinancialIdentificationSchemeName1Choice</inheritance:implements>
+		</jaxb:bindings>
+
+	</jaxb:bindings>
+
+</jaxb:bindings>
